@@ -1,0 +1,94 @@
+body {
+    background-color: antiquewhite;
+    
+}
+
+.block1, .block2, .block3, .block4 {
+    background-color: blueviolet;
+    display: flex;
+}
+
+.block1, .block2, .block3 {
+    height:33;
+    background-color: blueviolet;
+    float: left;
+    width: 303px;
+    height: 100px;
+    shape-outside: inset(20px 50px 10px 0 round 50px);
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.block4 {
+    height:33;
+    display: flex;
+    background-color: blueviolet;
+    width: 1075px;
+    height: 175px;
+    shape-outside: inset(20px 50px 10px 0 round 50px);  
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: stretch;
+    z-index: 0;
+}
+
+.circle{
+    display: flex;
+    position: absolute;
+    width: 300px;
+    left: 170px;
+    top: 30px;
+    z-index: 1;
+    }
+
+.triangle{
+    display: flex;
+    width: 20%;
+    z-index: 2;
+    
+}
+
+.star {
+    display: flex;
+    width: 50pt;
+    z-index: 3;
+}
+.form-container{
+    display: flex;
+}
+.form {
+    display: flex;
+    
+    
+  
+    
+}
+
+/* Media for different screens */
+@media screen and (min-width: 1680px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
